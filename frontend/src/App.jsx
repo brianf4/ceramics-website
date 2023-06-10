@@ -12,6 +12,7 @@ function App() {
           {/* Page content here */}
           <h1>All content goes here?</h1>
           <section className="border-2 border-black">hello</section>
+          content
 
 
           
