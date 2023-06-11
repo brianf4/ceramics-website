@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 export default function Navbar() {
   return (
@@ -25,10 +26,13 @@ export default function Navbar() {
         <ul className="menu menu-horizontal">
           {/* Navbar menu content here */}
           <li>
-            <a>About</a>
+            <Link to='gallery'>Gallery</Link>
           </li>
           <li>
-            <a>Contact</a>
+            <Link to='contact'>Contact</Link>
+          </li>
+          <li>
+            <Link to='about'>About</Link>
           </li>
         </ul>
       </div>

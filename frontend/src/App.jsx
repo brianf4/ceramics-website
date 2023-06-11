@@ -1,7 +1,16 @@
 import React from "react";
 import Navbar from "./components/Navbar";
+import { Routes, Route, Link } from "react-router-dom";
+
+// pages
+import Home from "./pages/Home"
+import Gallery from "./pages/Gallery";
+import Contact from "./pages/Contact";
+import About from "./pages/About";
 
 function App() {
+
+  
   return (
     <>
       <div className="drawer">
@@ -10,10 +19,12 @@ function App() {
           {/* Navbar */}
           <Navbar />
           {/* Page content here */}
-          <h1>All content goes here?</h1>
-          <section className="border-2 border-black">hello</section>
-          content
-          more changes
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="contact" element={<Contact />} />
+            <Route path="about" element={<About />} />
+            <Route path="gallery" element={<Gallery />} />
+          </Routes>
 
 
           
@@ -23,10 +34,13 @@ function App() {
           <ul className="menu p-4 w-80 h-full bg-base-200">
             {/* Sidebar content here */}
             <li>
-              <a>Sidebar Item 1</a>
+              <Link to='gallery'>Gallery</Link>
             </li>
             <li>
-              <a>Sidebar Item 2</a>
+              <a>Contact</a>
+            </li>
+            <li>
+              <a>About</a>
             </li>
           </ul>
         </div>
