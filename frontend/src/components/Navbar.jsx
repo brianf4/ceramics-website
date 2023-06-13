@@ -21,12 +21,14 @@ export default function Navbar() {
           </svg>
         </label>
       </div>
-      <div className="flex-1 px-2 mx-2">Navbar Title</div>
+      <div className="flex-1 px-2 mx-2">
+        <Link to='/'>Navbar Title</Link>
+      </div>
       <div className="flex-none hidden lg:block">
         <ul className="menu menu-horizontal">
           {/* Navbar menu content here */}
           <li>
-            <Link to='gallery'>Gallery</Link>
+            <Link to='gallery/ceramics'>Gallery</Link>
           </li>
           <li>
             <Link to='contact'>Contact</Link>
