@@ -39,7 +39,7 @@ function App() {
           <ul className="menu p-4 w-80 h-full bg-base-200">
             {/* Sidebar content here */}
             <li>
-              <Link to='gallery'>Gallery</Link>
+              <Link to='gallery/ceramics'>Gallery</Link>
             </li>
             <li>
               <a>Contact</a>

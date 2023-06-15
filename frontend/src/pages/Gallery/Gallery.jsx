@@ -15,8 +15,8 @@ function Gallery() {
 
 
     return (
-        <section className="w-4/5 m-auto">
-            <section className="tabs border-2 border-black">
+        <section className="">
+            <section className="tabs border-2 border-black w-4/5 m-auto">
                 <Link 
                     to='ceramics'
                     onClick={handleClick} 
