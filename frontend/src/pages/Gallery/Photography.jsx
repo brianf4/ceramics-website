@@ -1,11 +1,13 @@
 import React from "react";
-import { useNavigate } from "react-router-dom";
+import CoolLightbox from "../../components/Lightbox";
 
 function Photography() {
   
 
   return (
-    <h1>Photos</h1>
+    <section className="grid grid-cols-2">
+      <CoolLightbox />
+    </section>
   )
 }
 export default Photography
