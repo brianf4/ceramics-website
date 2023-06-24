@@ -1,13 +1,14 @@
-import React from "react";
-import CoolLightbox from "../../components/Lightbox";
+import React, { useState } from "react";
+
+import images from "../../imageDB"
 
 function Photography() {
-  
 
   return (
     <section className="">
-      <CoolLightbox />
+      
+
     </section>
-  )
+  );
 }
-export default Photography
+export default Photography;
