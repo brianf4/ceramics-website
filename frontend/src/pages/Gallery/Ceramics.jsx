@@ -12,26 +12,27 @@ function Ceramics() {
   const photos = imageData.data.map(obj => { return {src: obj.url} } )
   const urls = imageData.data.map(obj => { return {src: obj.url, width: 450, height: 600} } )
 
-  const images = imageData.data.map((image, i) => (
-    <img 
-      key={nanoid()} 
-      className="ceramics-image hover:cursor-pointer"
-      src={image.url} 
-      alt={image.name} 
-      onClick={() => setIndex(i)}
-    />
-  ))
+  // const images = imageData.data.map((image, i) => (
+  //   <img 
+  //     key={nanoid()} 
+  //     className="ceramics-image hover:cursor-pointer"
+  //     src={image.url} 
+  //     alt={image.name} 
+  //     onClick={() => setIndex(i)}
+  //   />
+  // ))
 
   return (
-    <div className="w-4/5 m-auto grid grid-cols-4 gap-4">
-      {/* <PhotoAlbum
-        
-        
+    <div className="w-4/5 m-auto border border-accent p-4">
+      <PhotoAlbum
+        key={nanoid()} 
+        className="ceramics-image hover:cursor-pointer"
         layout="rows" 
         photos={urls} 
+        padding="18"
         onClick={({ index }) => setIndex(index)}
-      /> */}
-      {images}
+      />
+
 
       {/* <Blurhash
         hash="LEHV6nWB2yk8pyo0adR*.7kCMdnj"
