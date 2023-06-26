@@ -22,18 +22,18 @@ export default function Navbar() {
         </label>
       </div>
       <div className="flex-1 px-2 mx-2">
-        <Link className="text-2xl font-medium" to='/'>Clarissa</Link>
+        <Link className="page-title text-4xl font-bold" to='/'>Clarissa</Link>
       </div>
       <div className="flex-none hidden lg:block">
         <ul className="menu menu-horizontal">
           {/* Navbar menu content here */}
-          <li className="text-xl font-normal">
+          <li className="text-xl font-medium">
             <Link to='gallery/ceramics'>Gallery</Link>
           </li>
-          <li className="text-xl font-normal">
+          <li className="text-xl font-medium">
             <Link to='contact'>Contact</Link>
           </li>
-          <li className="text-xl font-normal">
+          <li className="text-xl font-medium">
             <Link to='about'>About</Link>
           </li>
         </ul>

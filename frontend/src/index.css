@@ -9,3 +9,7 @@ html, body, #root, .drawer {
 body {
   font-family: 'Rubik', sans-serif;
 }
+
+.page-title {
+  font-family: 'Dancing Script', cursive;
+}
