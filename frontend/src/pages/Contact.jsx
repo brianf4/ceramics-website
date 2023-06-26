@@ -1,8 +1,11 @@
 import React from "react";
+import Footer from "../components/Footer";
 
 function Contact() {
     return (
-        <h1>Contact</h1>
+        <div className="flex flex-col justify-end h-full">
+            <Footer />
+        </div>
     )
 }
 export default Contact
