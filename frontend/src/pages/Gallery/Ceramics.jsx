@@ -33,14 +33,14 @@ function Ceramics() {
       /> */}
       {images}
 
-      <Blurhash
+      {/* <Blurhash
         hash="LEHV6nWB2yk8pyo0adR*.7kCMdnj"
         width={450}
         height={600}
         resolutionX={32}
         resolutionY={32}
         punch={1}
-      />
+      /> */}
 
       <Lightbox
         open={index >= 0}
@@ -48,7 +48,7 @@ function Ceramics() {
         slides={photos}
         index={index}
       />
-      
+
     </div>
   );
 }

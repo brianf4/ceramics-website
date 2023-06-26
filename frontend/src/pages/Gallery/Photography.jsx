@@ -5,8 +5,8 @@ import images from "../../imageDB"
 function Photography() {
 
   return (
-    <section className="">
-      
+    <section className="w-4/5 m-auto">
+      <h1>Photos</h1>
 
     </section>
   );

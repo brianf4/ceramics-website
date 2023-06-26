@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { Link, Outlet } from "react-router-dom";
+import Footer from "../../components/Footer"
 
 function Gallery() {
 
@@ -29,6 +30,7 @@ function Gallery() {
                 </Link>
             </section>
             <Outlet />
+            <Footer />
         </section>
     )
 }

@@ -11,7 +11,6 @@ import Ceramics from "./pages/Gallery/Ceramics";
 import Photography from "./pages/Gallery/Photography"
 
 function App() {
-
   
   return (
     <>
@@ -30,7 +29,6 @@ function App() {
               <Route path="photography" element={<Photography />} />
             </Route>
           </Routes>
-
 
           
         </div>

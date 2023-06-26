@@ -2,10 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-.ceramics-image {
-  width: 100%;
-  height: 100%;
-  object-fit: fill;
+body {
+  font-family: 'Rubik', sans-serif;
 }
-
-
