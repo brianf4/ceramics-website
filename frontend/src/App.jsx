@@ -23,14 +23,14 @@ function App() {
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="contact" element={<Contact />} />
-            <Route path="about" element={<About />} />
+            <Route path="about" element={<About  />} />
             <Route path="gallery" element={<Gallery />} >
               <Route path="ceramics" element={<Ceramics />} />
               <Route path="photography" element={<Photography />} />
             </Route>
           </Routes>
 
-          
+
         </div>
         <div className="drawer-side">
           <label htmlFor="my-drawer-3" className="drawer-overlay"></label>

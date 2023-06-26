@@ -2,6 +2,10 @@
 @tailwind components;
 @tailwind utilities;
 
+html, body, #root, .drawer {
+  height: 100%;
+}
+
 body {
   font-family: 'Rubik', sans-serif;
 }

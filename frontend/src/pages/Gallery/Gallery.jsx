@@ -16,22 +16,25 @@ function Gallery() {
 
 
     return (
-        <section className="">
-            <section className="tabs border border-accent w-4/5 m-auto">
-                <Link 
-                    to='ceramics'
-                    onClick={handleClick} 
-                    className={`tab tab-lifted ${isTabActive ? `tab-active` : ``} text-lg`}>ceramics
-                </Link>
-                <Link 
-                    to='photography'
-                    onClick={handleClick}
-                    className={`tab tab-lifted ${!isTabActive ? `tab-active` : ``} text-lg`}>photography
-                </Link>
+            <section className="border-2 border-red-500 flex flex-col justify-between h-full">
+                <section>
+                    <section className="tabs w-4/5 m-auto mt-2">
+                        <Link 
+                            to='ceramics'
+                            onClick={handleClick} 
+                            className={`tab tab-lifted tab-lg ${isTabActive ? `tab-active` : ``} text-lg`}>Ceramics
+                        </Link>
+                        <Link 
+                            to='photography'
+                            onClick={handleClick}
+                            className={`tab tab-lifted tab-lg ${!isTabActive ? `tab-active` : ``} text-lg`}>Photography
+                        </Link>
+                    </section>
+                    <Outlet />
+                </section>
+                
+                <Footer />
             </section>
-            <Outlet />
-            <Footer />
-        </section>
     )
 }
 export default Gallery

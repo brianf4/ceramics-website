@@ -10,7 +10,7 @@ import { Blurhash } from "react-blurhash"
 function Ceramics() {
   const [index, setIndex] = useState(-1);
   const photos = imageData.data.map(obj => { return {src: obj.url} } )
-  const urls = imageData.data.map(obj => { return {src: obj.url, width: 450, height: 600} } )
+  const urls = imageData.data.map(obj => { return {src: obj.url, width: obj.width, height: obj.height} } )
 
   // const images = imageData.data.map((image, i) => (
   //   <img 
@@ -25,11 +25,9 @@ function Ceramics() {
   return (
     <div className="w-4/5 m-auto border border-accent p-4">
       <PhotoAlbum
-        key={nanoid()} 
-        className="ceramics-image hover:cursor-pointer"
+        className=""
         layout="rows" 
         photos={urls} 
-        padding="18"
         onClick={({ index }) => setIndex(index)}
       />
 
