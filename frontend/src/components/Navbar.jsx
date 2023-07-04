@@ -28,7 +28,7 @@ export default function Navbar() {
         <ul className="menu menu-horizontal">
           {/* Navbar menu content here */}
           <li className="text-xl font-medium">
-            <Link to='gallery/ceramics'>Gallery</Link>
+            <Link to='work'>Work</Link>
           </li>
           <li className="text-xl font-medium">
             <Link to='contact'>Contact</Link>

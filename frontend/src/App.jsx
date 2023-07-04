@@ -4,11 +4,11 @@ import { Routes, Route, Link } from "react-router-dom";
 
 // pages
 import Home from "./pages/Home"
-import Gallery from "./pages/Gallery/Gallery";
+import Works from "./pages/Gallery/Works";
 import Contact from "./pages/Contact";
 import About from "./pages/About";
-import Ceramics from "./pages/Gallery/Ceramics";
-import Photography from "./pages/Gallery/Photography"
+
+
 
 function App() {
   
@@ -24,10 +24,7 @@ function App() {
             <Route path="/" element={<Home />} />
             <Route path="contact" element={<Contact />} />
             <Route path="about" element={<About  />} />
-            <Route path="gallery" element={<Gallery />} >
-              <Route path="ceramics" element={<Ceramics />} />
-              <Route path="photography" element={<Photography />} />
-            </Route>
+            <Route path="work" element={<Works />} />
           </Routes>
 
 

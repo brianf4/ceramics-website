@@ -20,9 +20,7 @@ body {
   /* animation: fadeIn 0.8s; */
 }
 
-.homepage {
-  background: no-repeat center/80%  url(https://res.cloudinary.com/dlvo8ggo3/image/upload/v1687204292/IMG_9446_xo1rls.jpg);
-}
+
 
 /**
  * ----------------------------------------
@@ -53,8 +51,3 @@ body {
   0% { opacity: 0; }
   100% { opacity: 1; }
 }
-/* @keyframes fadeIn {
-  
-} */
-
-

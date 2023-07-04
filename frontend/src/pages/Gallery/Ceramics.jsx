@@ -2,10 +2,8 @@ import React, { useState } from "react";
 import imageData from '../../imageDB'
 import Lightbox from "yet-another-react-lightbox";
 import "yet-another-react-lightbox/styles.css";
-import { nanoid } from 'nanoid'
 import PhotoAlbum from "react-photo-album";
 import "react-lazy-load-image-component/src/effects/blur.css";
-import { Blurhash } from "react-blurhash"
 
 function Ceramics() {
   const [index, setIndex] = useState(-1);
