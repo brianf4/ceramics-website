@@ -24,9 +24,8 @@ function Works() {
 
     return (
         <div>
-            <section className="border-2 border-red-500 flex items-center px-4 h-full">
+            <section className="p-4">
                 <PhotoAlbum
-                    className=""
                     layout="columns"
                     photos={urls}
                     onClick={({ index }) => setIndex(index)}
