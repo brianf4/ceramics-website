@@ -22,7 +22,7 @@ export default function Navbar() {
         </label>
       </div>
       <div className="flex-1 px-2 mx-2">
-        <Link className="page-title text-4xl font-bold" to='/'>Clarissa</Link>
+        <Link className="page-title text-4xl font-bold" to='/'>Clarissa Rose</Link>
       </div>
       <div className="flex-none hidden lg:block">
         <ul className="menu menu-horizontal">
